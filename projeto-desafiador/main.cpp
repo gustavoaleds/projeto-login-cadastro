@@ -2,14 +2,21 @@
 
 using namespace std;
 
+ struct{
+    char username[20];  //Vetor referente ao username da struct USER;
+    char password[20];  //Vetor referente ao password da struct USER;
+} user;char u[1];
+
 int main()
 {
-  //  string username = "";
-  //  string password = "";
+    cout << "LOGIN\n\n";
+    cout << "Insert your username and password to continue: \n\n";
 
-   // bool login_sucess = false;
+    char username[20];
+    char password[20];
 
-    cout <<"LOGIN";
-    cout <<"To continue insert username and password";
-    return 0;
+    cout << "Username: ";
+    cin >> username;
+    cout << "Password: ";
+    cin >> password;
 }
