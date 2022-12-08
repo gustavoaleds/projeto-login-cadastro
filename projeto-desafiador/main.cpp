@@ -1,22 +1,28 @@
 #include <iostream>
+#include <fstream>
+#include <string>
 
 using namespace std;
 
- struct{
-    char username[20];  //Vetor referente ao username da struct USER;
-    char password[20];  //Vetor referente ao password da struct USER;
-} user;char u[1];
 
 int main()
 {
-    cout << "LOGIN\n\n";
-    cout << "Insert your username and password to continue: \n\n";
+    int option;
 
-    char username[20];
-    char password[20];
+    cout << "Select a option: \n1. Register \n2. Login\nEnter the option number: ";
+    cin >> option;
+    if(option == 1){
 
-    cout << "Username: ";
-    cin >> username;
-    cout << "Password: ";
-    cin >> password;
+        string username, password;
+
+        cout << "Choose a username: "; cin >> username;
+        cout << "Choose a password: "; cin >> password;
+
+        ofstream file;
+        file.open("username.txt");
+        file << username << endl << password;
+        file.close();
+
+        main();
+    }
 }
