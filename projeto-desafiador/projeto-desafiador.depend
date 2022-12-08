@@ -1,6 +1,7 @@
 # depslib dependency file v1.0
-1670467010 source:c:\users\gusta\onedrive\documentos\github\projeto-login-cadastro\projeto-desafiador\main.cpp
+1670469310 source:c:\users\gusta\onedrive\documentos\github\projeto-login-cadastro\projeto-desafiador\main.cpp
 	<iostream>
 	<fstream>
 	<string>
+	<cstdlib>
 
